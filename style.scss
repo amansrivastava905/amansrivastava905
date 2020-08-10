@@ -197,17 +197,13 @@ nav{
            width:450px;
            @media screen and (max-width:580px)
            {
-              width:400px;
+              width:350px;
            }
            @media screen and (max-width:460px)
             {
-               width:350px;
-            }
-            @media screen and (max-width:400px)
-            {
                width:300px;
             }
-            @media screen and (max-width:350px)
+            @media screen and (max-width:400px)
             {
                width:250px;
             }
@@ -272,3 +268,5 @@ nav{
         }
     }
 }
+
+

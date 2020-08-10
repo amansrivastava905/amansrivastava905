@@ -169,20 +169,15 @@ nav .burger-wrap .burger:hover {
 }
 @media screen and (max-width: 580px) {
   .landing-container .image img {
-    width: 400px;
+    width: 350px;
   }
 }
 @media screen and (max-width: 460px) {
   .landing-container .image img {
-    width: 350px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .landing-container .image img {
     width: 300px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .landing-container .image img {
     width: 250px;
   }
