@@ -169,10 +169,10 @@ nav{
 
 .landing-container{
     min-height: 100vh;
-    padding:70px 10px 20px 10px;
+    padding:50px 10px 20px 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:center;
     @media screen and (max-width:920px)
     {
         display:flex;
@@ -263,6 +263,61 @@ nav{
                     background-color: $nav-back;
                     color:$heading-color;
                     transition: background-color 0.4s;
+                }
+            }
+        }
+    }
+}
+
+
+
+.skill-container{
+    background-color: rgb(238, 238, 238);
+    padding: 100px 50px 20px 50px;
+    @media screen and (max-width:560px){
+        padding: 100px 20px 20px 20px;
+    }
+    h1{
+        font-size: 48px;
+        font-family: $heading-font;
+        color: $heading-color;
+        @media screen and (max-width:460px) {
+            font-size: 36px;
+        }
+    }
+    p{
+        font-family: $content-font;
+        color: $content-color;
+        font-size: 24px;
+        padding-bottom: 50px;
+        @media screen and (max-width:460px) {
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .skills{
+        display: flex;
+        justify-content:left;
+        flex-wrap: wrap;
+        @media screen and (max-width:480px) {
+            justify-content:space-evenly;
+         }
+        .skill-box{
+            span{
+                line-height: 80px;
+                margin:10px;
+                padding:10px 30px;
+                background:rgb(224, 224, 224);
+                border-radius: 50px;
+                font-size: 18px;
+                color:$content-color;
+                font-family: $content-font;
+                border:2px solid rgb(189, 189, 189);
+                @media screen and (max-width:480px) {
+                   line-height: 65px;
+                   margin:5px;
+                   padding:10px 20px;
                 }
             }
         }
