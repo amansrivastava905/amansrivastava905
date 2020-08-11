@@ -320,11 +320,11 @@ nav .burger-wrap .burger:hover {
 }
 
 .project-container {
-  padding: 100px 50px 20px 50px;
+  padding: 100px 50px 50px 50px;
 }
 @media screen and (max-width: 560px) {
   .project-container {
-    padding: 100px 20px 20px 20px;
+    padding: 100px 20px 50px 20px;
   }
 }
 .project-container h1 {
@@ -426,10 +426,71 @@ nav .burger-wrap .burger:hover {
   transition: box-shadow 0.4s;
 }
 
+.about-container {
+  background-color: #f1f1f1;
+  padding: 100px 50px;
+}
+@media screen and (max-width: 560px) {
+  .about-container {
+    padding: 100px 20px 50px 20px;
+  }
+}
+.about-container h1 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: #d84400;
+}
+@media screen and (max-width: 460px) {
+  .about-container h1 {
+    font-size: 36px;
+  }
+}
+.about-container p {
+  font-family: "Roboto", sans-serif;
+  color: #616161;
+  font-size: 22px;
+  padding-bottom: 20px;
+  width: 70%;
+}
+@media screen and (max-width: 850px) {
+  .about-container p {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .about-container p {
+    font-size: 18px;
+    padding-bottom: 15px;
+    text-align: justify;
+  }
+}
+.about-container .image {
+  text-align: center;
+}
+.about-container .image img {
+  width: 400px;
+}
+@media screen and (max-width: 460px) {
+  .about-container .image img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-container .image img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about-container .image img {
+    width: 250px;
+  }
+}
+
 .contact-container {
   padding: 100px 50px;
   background-color: #ececec;
-  border-top: 1px solid #bdbdbd;
+  border-top: 1px solid #dbdbdb;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -446,7 +507,7 @@ nav .burger-wrap .burger:hover {
 }
 @media screen and (max-width: 460px) {
   .contact-container h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 .contact-container p {
@@ -487,6 +548,30 @@ nav .burger-wrap .burger:hover {
 .contact-container .image img {
   display: inline-block;
   width: 300px;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #ececec;
+  text-align: center;
+}
+.footer p {
+  font-family: "Roboto", sans-serif;
+  color: #616161;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.footer p i {
+  color: red;
+}
+.footer p span {
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 460px) {
+  .footer p {
+    font-size: 20px;
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

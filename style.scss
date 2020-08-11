@@ -340,9 +340,9 @@ nav{
 
 
 .project-container{
-    padding:100px 50px 20px 50px;
+    padding:100px 50px 50px 50px;
     @media screen and (max-width:560px){
-        padding: 100px 20px 20px 20px;
+        padding: 100px 20px 50px 20px;
     }
     h1{
         font-size: 48px;
@@ -439,13 +439,67 @@ nav{
 }
 
 
+
+.about-container{
+    background-color:rgb(241, 241, 241);
+    padding:100px 50px;
+    @media screen and (max-width:560px){
+        padding: 100px 20px 50px 20px;
+    }
+    h1{
+        font-size: 48px;
+        font-family: $heading-font;
+        color:$heading-color;
+        @media screen and (max-width:460px) {
+            font-size: 36px;
+        }
+    }
+    p{
+        font-family: $content-font;
+        color:$content-color;
+        font-size: 22px;
+        padding-bottom: 20px;
+        width:70%;
+        @media screen and (max-width:850px) {
+            font-size: 20px;
+            width:100%;
+        }
+        @media screen and (max-width:460px) {
+            font-size: 18px;
+            padding-bottom: 15px;
+            text-align: justify;
+        }
+    }
+
+    .image{
+        text-align: center;
+        img{
+            width:400px;
+            @media screen and (max-width:460px) {
+               width:350px;
+            }
+            @media screen and (max-width:400px) {
+                width:300px;
+             }
+             @media screen and (max-width:350px) {
+                width:250px;
+             }
+        }
+    }
+    
+}
+
+
+
+
+
 .contact-container{
     padding:100px 50px;
     @media screen and (max-width:560px){
         padding: 100px 20px 20px 20px;
     }
     background-color:rgb(236, 236, 236);
-    border-top: 1px solid rgb(189, 189, 189);
+    border-top: 1px solid rgb(219, 219, 219);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -454,7 +508,7 @@ nav{
         font-family: $heading-font;
         color:$heading-color;
         @media screen and (max-width:460px) {
-            font-size: 32px;
+            font-size: 36px;
         }
     }
     p{
@@ -502,4 +556,24 @@ nav{
     }
 }
 
-
+.footer{
+    padding:20px;
+    background-color:rgb(236, 236, 236);
+    text-align: center;
+    p{
+        i{
+            color:red;
+        }
+        span{
+            font-family: $heading-font;
+        }
+        font-family: $content-font;
+        color:$content-color;
+        font-size: 24px;
+        padding-bottom: 20px;
+        @media screen and (max-width:460px) {
+            font-size: 20px;
+            font-size: 20px;
+        }
+    }
+}
