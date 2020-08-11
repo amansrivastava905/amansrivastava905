@@ -20,7 +20,13 @@ html{
     scroll-behavior: smooth;
 }
 
-
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 body{
     height:200vh;
@@ -215,6 +221,10 @@ nav{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media screen and (max-width:580px)
+        {
+           justify-content:start;
+        }
         .text-content{
 
             padding:10px 100px;
@@ -323,5 +333,7 @@ nav{
         }
     }
 }
+
+
 
 

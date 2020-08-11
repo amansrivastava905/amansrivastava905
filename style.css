@@ -8,6 +8,14 @@ html {
   scroll-behavior: smooth;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
   height: 200vh;
   background-color: #f7f7f7;
@@ -187,6 +195,11 @@ nav .burger-wrap .burger:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 580px) {
+  .landing-container .text {
+    justify-content: start;
+  }
 }
 .landing-container .text .text-content {
   padding: 10px 100px;
