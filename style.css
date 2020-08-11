@@ -50,6 +50,9 @@ nav .name a:hover {
   color: #5a5a5a;
   transition: color 0.4s;
 }
+nav .name a span {
+  font-size: 16px;
+}
 nav .navigation {
   display: flex;
   flex-direction: column;
@@ -317,7 +320,6 @@ nav .burger-wrap .burger:hover {
 }
 
 .project-container {
-  min-height: 100vh;
   padding: 100px 50px 20px 50px;
 }
 @media screen and (max-width: 560px) {
@@ -381,7 +383,7 @@ nav .burger-wrap .burger:hover {
 }
 .project-container .project-box .project a .image img {
   width: 250px;
-  border-radius: 20px;
+  border-radius: 15px;
   display: inline-block;
 }
 @media screen and (max-width: 500px) {
@@ -426,17 +428,21 @@ nav .burger-wrap .burger:hover {
 
 .contact-container {
   padding: 100px 50px;
-  background-color: #d84400;
+  background-color: #ececec;
+  border-top: 1px solid #bdbdbd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 @media screen and (max-width: 560px) {
   .contact-container {
-    padding: 100px 20px 50px 20px;
+    padding: 100px 20px 20px 20px;
   }
 }
 .contact-container h1 {
   font-size: 48px;
   font-family: "Montserrat", sans-serif;
-  color: #eeeeee;
+  color: #d84400;
 }
 @media screen and (max-width: 460px) {
   .contact-container h1 {
@@ -445,31 +451,42 @@ nav .burger-wrap .burger:hover {
 }
 .contact-container p {
   font-family: "Roboto", sans-serif;
-  color: #e7e7e7;
+  color: #616161;
   font-size: 24px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 460px) {
   .contact-container p {
     font-size: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
+}
+.contact-container .social {
+  padding-bottom: 10px;
 }
 .contact-container .social a i {
   padding: 15px;
   font-size: 42px;
-  color: #e4e4e4;
+  color: #d84400;
 }
 .contact-container .social a i:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  color: #616161;
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
 }
 .contact-container .contact {
   font-family: "Roboto", sans-serif;
-  color: #e4e4e4;
+  color: #616161;
 }
 .contact-container .contact h3 {
   font-weight: lighter;
+}
+.contact-container .image {
+  text-align: right;
+}
+.contact-container .image img {
+  display: inline-block;
+  width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
