@@ -336,6 +336,7 @@ nav{
 
 
 .project-container{
+    min-height: 100vh;
     padding:100px 50px 20px 50px;
     @media screen and (max-width:560px){
         padding: 100px 20px 20px 20px;
@@ -434,5 +435,54 @@ nav{
     }
 }
 
+
+.contact-container{
+    padding:100px 50px;
+    @media screen and (max-width:560px){
+        padding: 100px 20px 50px 20px;
+    }
+    background-color: $heading-color;
+    h1{
+        font-size: 48px;
+        font-family: $heading-font;
+        color:rgb(238, 238, 238);
+        @media screen and (max-width:460px) {
+            font-size: 32px;
+        }
+    }
+    p{
+        font-family: $content-font;
+        color: rgb(231, 231, 231);
+        font-size: 24px;
+        padding-bottom: 50px;
+        @media screen and (max-width:460px) {
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .social{
+        
+        a{
+           i{
+               padding:15px;
+               font-size: 42px;
+               color:rgb(228, 228, 228);
+               &:hover{
+                   background-color: rgba(0,0,0,0.1);
+                   border-radius: 50%;
+               }
+           }
+        }
+    }
+
+    .contact{
+        font-family: $content-font;
+        color:rgb(228, 228, 228);
+        h3{
+            font-weight: lighter;
+        }
+    }
+}
 
 

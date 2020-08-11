@@ -317,6 +317,7 @@ nav .burger-wrap .burger:hover {
 }
 
 .project-container {
+  min-height: 100vh;
   padding: 100px 50px 20px 50px;
 }
 @media screen and (max-width: 560px) {
@@ -421,6 +422,54 @@ nav .burger-wrap .burger:hover {
   -moz-box-shadow: 3px 3px 47px -10px rgba(0, 0, 0, 0.57);
   box-shadow: 3px 3px 47px -10px rgba(0, 0, 0, 0.57);
   transition: box-shadow 0.4s;
+}
+
+.contact-container {
+  padding: 100px 50px;
+  background-color: #d84400;
+}
+@media screen and (max-width: 560px) {
+  .contact-container {
+    padding: 100px 20px 50px 20px;
+  }
+}
+.contact-container h1 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: #eeeeee;
+}
+@media screen and (max-width: 460px) {
+  .contact-container h1 {
+    font-size: 32px;
+  }
+}
+.contact-container p {
+  font-family: "Roboto", sans-serif;
+  color: #e7e7e7;
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 460px) {
+  .contact-container p {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+}
+.contact-container .social a i {
+  padding: 15px;
+  font-size: 42px;
+  color: #e4e4e4;
+}
+.contact-container .social a i:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.contact-container .contact {
+  font-family: "Roboto", sans-serif;
+  color: #e4e4e4;
+}
+.contact-container .contact h3 {
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=style.css.map */
