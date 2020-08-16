@@ -38,7 +38,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 100;
-  top: 10px;
+  top: 5px;
 }
 nav .name {
   display: flex;
