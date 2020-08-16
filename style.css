@@ -20,6 +20,15 @@ body {
   background-color: #f7f7f7;
 }
 
+.gradient {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  height: 10px;
+  background: #3923cc;
+  background: linear-gradient(90deg, #3923cc 0%, #f36f3b 26%, red 91%);
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -29,6 +38,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 100;
+  top: 10px;
 }
 nav .name {
   display: flex;
@@ -37,17 +47,20 @@ nav .name {
 }
 nav .name a {
   text-decoration: none;
-  color: #d84400;
+  background-color: #e0e0e0;
+  color: #5a5a5a;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   padding: 5px 10px;
   border-radius: 50px;
-  transition: color 0.2s;
+  transition: box-shadow 0.2s;
 }
 nav .name a:hover {
   background-color: #e0e0e0;
-  color: #5a5a5a;
-  transition: color 0.4s;
+  transition: box-shadow 0.4s;
+  -webkit-box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
 }
 nav .name a span {
   font-size: 16px;
@@ -89,11 +102,11 @@ nav .burger-wrap .burger {
   justify-content: center;
   padding: 10px;
   border-radius: 50%;
-  color: #d84400;
+  color: #5a5a5a;
 }
 nav .burger-wrap .burger:hover {
   background-color: #e0e0e0;
-  color: #5a5a5a;
+  color: #d84400;
 }
 @media screen and (max-width: 740px) {
   nav {
@@ -145,7 +158,7 @@ nav .burger-wrap .burger:hover {
 
 .landing-container {
   min-height: 100vh;
-  padding: 50px 10px 20px 10px;
+  padding: 100px 10px 20px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -357,8 +370,8 @@ nav .burger-wrap .burger:hover {
   max-width: 330px;
   padding: 20px;
   border: 1px solid #bdbdbd;
-  border-radius: 20px;
-  margin: 20px 10px;
+  border-radius: 15px;
+  margin: 20px 20px;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
@@ -382,7 +395,7 @@ nav .burger-wrap .burger:hover {
 }
 .project-container .project-box .project a .image img {
   width: 250px;
-  border-radius: 15px;
+  border-radius: 10px;
   display: inline-block;
 }
 @media screen and (max-width: 500px) {
@@ -425,8 +438,73 @@ nav .burger-wrap .burger:hover {
   transition: box-shadow 0.4s;
 }
 
+.blog-container {
+  background-color: #eeeeee;
+  padding: 100px 50px;
+}
+@media screen and (max-width: 560px) {
+  .blog-container {
+    padding: 100px 20px 50px 20px;
+  }
+}
+.blog-container h1 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: #d84400;
+}
+@media screen and (max-width: 460px) {
+  .blog-container h1 {
+    font-size: 36px;
+  }
+}
+.blog-container p {
+  font-family: "Roboto", sans-serif;
+  color: #616161;
+  font-size: 22px;
+  padding-bottom: 20px;
+  width: 70%;
+}
+@media screen and (max-width: 850px) {
+  .blog-container p {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .blog-container p {
+    font-size: 18px;
+    padding-bottom: 15px;
+    text-align: justify;
+  }
+}
+.blog-container .blog-box {
+  padding: 50px 10px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.blog-container .blog-box .blog {
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid #bdbdbd;
+  margin: 5px;
+  transition: 0.4s border;
+}
+.blog-container .blog-box .blog a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #616161;
+  padding: 5px;
+}
+.blog-container .blog-box .blog:hover {
+  border: 2px solid #d84400;
+  transition: 0.4s border;
+}
+.blog-container .blog-box .blog:hover a {
+  color: #d84400;
+}
+
 .about-container {
-  background-color: #f1f1f1;
   padding: 100px 50px;
 }
 @media screen and (max-width: 560px) {
