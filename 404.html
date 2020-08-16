@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | lone spirit discovered</title>
+     <!-- icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+     <!-- fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+
+    <div id="coverAll" onclick="nav()"></div>
+    <nav>
+        <div class="name">
+            <a href="index.html">AMAN</a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html#skill">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="burger-wrap" onclick="nav()">
+            <div class="burger">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- landing page -->
+
+    <div class="error-page">
+        <div class="text">
+            <h1>This place is called <span>404</span></h1>
+            <p>looks like we spotted a lone wanderer.</p>
+        </div>
+    </div>
+
+    <script>
+
+
+        function nav(){
+            const nav=document.querySelector(".navigation");
+            if(nav.style.left=="-100vw" || nav.style.left=="")
+            {
+                nav.style.left="0vw";
+                document.getElementById('coverAll').style.display = 'block';
+            }
+            else
+            {
+                document.getElementById('coverAll').style.display = 'none';
+                nav.style.left="-100vw";
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>
